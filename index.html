@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prince Kiruhura – UX/UI Designer Portfolio">
     <title>Prince Kiruhura – Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- HEADER -->
     <header class="topnav">
-        <h1 class="logo">Prince Kiruhura</h1>
+        <div class="header-container">
+            <h1 class="logo">Prince Kiruhura</h1>
+            <p class="tagline">UX/UI Designer</p>
+        </div>
     </header>
 
     <!-- HERO -->
@@ -20,72 +28,87 @@
             </div>
 
             <div class="hero-right">
-                <h2>Hello, I'm Prince Kiruhura</h2>
-                <p>
-                   I’m a User Design student passionate about building intuitive and thoughtful digital experiences. 
-                  This portfolio showcases my work from a User Design course, 
-                  including redesigns, user research, and UI/UX design projects.
+                <h2 class="hero-title">Hello, I'm Prince Kiruhura</h2>
+                <p class="hero-subtitle">User Design & Digital Experiences</p>
+                <p class="hero-description">
+                   I'm a passionate UX/UI designer focused on building intuitive and thoughtful digital experiences. 
+                   This portfolio showcases my coursework including website redesigns, user research, 
+                   and strategic design projects.
                 </p>
 
-                <a href="projects/Prince-Kiruhura-Resume.pdf" target="_blank" class="button">
-                    My Resume
-                </a>
-
-                <a href="projects/Design manifesto.pdf" target="_blank" class="button">
-                    My Manifesto
-                </a>
+                <div class="button-group">
+                    <a href="projects/Prince-Kiruhura-Resume.pdf" target="_blank" class="button button-primary">
+                        My Resume
+                    </a>
+                    <a href="projects/Design manifesto.pdf" target="_blank" class="button button-secondary">
+                        My Manifesto
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- PROJECTS -->
     <section class="project-section">
-        <h2>Projects</h2>
-        <p class="project-intro">
-            Check out a selection of projects I worked on throughout the semester.
-            These projects highlight my coursework and design work. 
-            Click to view the full project documents.
-        </p>
+        <div class="project-container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <p class="project-intro">
+                    A selection of UX/UI projects showcasing my design process, user research, and problem-solving approach.
+                </p>
+            </div>
 
         <div class="project-grid">
 
             <div class="project-card">
-                <h3>The Buzz Redesign</h3>
-                <p>
-                    A UX/UI redesign of St. Bonaventure’s campus radio station website,
-                    focusing on usability, clarity, and modern design.
-                </p>
-                <a href="projects/The buzz redesign.pdf" target="_blank" class="button">
+                <div class="project-content">
+                    <h3>The Buzz Redesign</h3>
+                    <p class="project-category">Website Redesign • UX/UI</p>
+                    <p>
+                        A strategic UX/UI redesign of St. Bonaventure's campus radio station website,
+                        focusing on usability, information architecture, and modern design principles.
+                    </p>
+                </div>
+                <a href="projects/The buzz redesign.pdf" target="_blank" class="button button-card">
                     View Project
                 </a>
             </div>
 
             <div class="project-card">
-                <h3>Movie App Design</h3>
-                <p>
-                    A mobile-first redesign of a regional movie website,
-                    transforming it into a streamlined app experience.
-                </p>
-                <a href="projects/Movie App design document.pdf" target="_blank" class="button">
+                <div class="project-content">
+                    <h3>Movie App Design</h3>
+                    <p class="project-category">Mobile Design • App Redesign</p>
+                    <p>
+                        A mobile-first redesign transforming a regional movie website into a streamlined, 
+                        user-centered app experience with improved navigation and content discovery.
+                    </p>
+                </div>
+                <a href="projects/Movie App design document.pdf" target="_blank" class="button button-card">
                     View Project
                 </a>
             </div>
 
             <div class="project-card">
-                <h3>FIFA Dataset Analysis</h3>
-                <p>
-                    A data-driven project analyzing FIFA match data to explore trends,
-                    decisions, and outcomes using visualizations.
-                </p>
-                <a href="projects/Fifadataset.pdf" class="button">
+                <div class="project-content">
+                    <h3>FIFA Dataset Analysis</h3>
+                    <p class="project-category">Data Visualization • Analysis</p>
+                    <p>
+                        A data-driven project analyzing FIFA match data, creating meaningful visualizations 
+                        to explore trends, performance metrics, and strategic insights.
+                    </p>
+                </div>
+                <a href="projects/Fifadataset.pdf" target="_blank" class="button button-card">
                     View Project
                 </a>
-            </div>
-
-            <div class="project-card">
-                <h3>Campus Redesign Concept</h3>
-                <p>
-                    A research-based redesign addressing a campus usability issue,
+            </divdiv class="project-content">
+                    <h3>Campus Redesign Concept</h3>
+                    <p class="project-category">Research • Problem Solving</p>
+                    <p>
+                        A research-based redesign addressing a real campus usability issue, 
+                        proposing user-centered improvements grounded in UX principles and user feedback.
+                    </p>
+                </div>
+                <a href="projects/School Laundry issue.pdf" target="_blank" class="button button-cardty issue,
                     proposing improvements through UX principles.
                 </p>
                 <a href="projects/School Laundry issue.pdf" class="button">
@@ -98,7 +121,13 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>Email: kiruhup23@bonaventure.edu | Phone: (716) 395-5141</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Prince Kiruhura. Designed with attention to detail.</p>
+            <p class="footer-links">
+                <a href="projects/Prince-Kiruhura-Resume.pdf" target="_blank">Resume</a> • 
+                <a href="projects/Design manifesto.pdf" target="_blank">Manifesto</a>
+            </p>
+        </div>
     </footer>
 
 </body>
